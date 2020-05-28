@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+	{% extends "basicApp/base.html" %}
+	{% load my_tags %}
+	{% block body_block %}
+	<h1> Index</h1>
+	<h2> This is also an example of templates inheritance</h2>
+	<h1> {{ text |slic}}</h1>
+	<h1>{{ number | add:"292"}}</h1>
+<!-- 	<a href="{% url 'basicApp:relative_url_templates'%}"> Go To Relative Url Templates</a><br>
+	<a href="{% url 'basicApp:other'%}"> Go To Other</a> -->
+	{% endblock %}

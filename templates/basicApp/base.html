@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base File</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container" >
+			<ul class="nav  nav-tabs">
+				<li><a class="navbar-brand" href="#">Brand</a></li>
+				<li><a class="navbar-brand" href="#">Admin</a></li>
+				<li><a class="navbar-brand" href="#">Other</a></li>
+			</ul>
+			
+		</div>
+	</nav>
+
+	<div class="container">
+		{% block body_block %}
+			<!--Anything outside this will be inherited by other files if extended-->
+		{% endblock%}
+	</div>
+
+</body>
+</html>
